@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume Builder</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Editable Resume</title>
+    <Link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="shareable-resume-builder">
-        <h1>Shareable Resume Builder</h1>
+    <div class="resume-builder">
+        <h1>Editable Resume Builder</h1>
         
         <div class="section personal-info">
             <h2>Personal Information</h2>
@@ -33,19 +33,11 @@
         </div>
 
         <button id="createResumeButton">Create My Resume</button>
+        <br>
 
-        <div id="generatedResume" class="generated-resume"></div>
-
-        <!-- New Section for Resume URL and Download PDF -->
-        <div id="resumeActions" class="resume-actions">
-            <button id="downloadPDFButton">Download as PDF</button>
-            <div id="resumeURLContainer">
-                <p><strong>Resume URL:</strong> <span id="resumeURL"></span></p>
-            </div>
-        </div>
+        <div id="generatedResume" class="generated-resume" contenteditable="true"></div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="file.js"></script>
 </body>
 </html>

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "save": "file:../../../../../../type"
+  }
+}
